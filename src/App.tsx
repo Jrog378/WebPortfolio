@@ -1,34 +1,87 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {Container} from "react-bootstrap";
+import {Card, Col, Container, Image, Row} from "react-bootstrap";
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
         <Container>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo"/>
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img src={reactLogo} className="logo react" alt="React logo"/>
-                </a>
-            </div>
-            <h1>Vite + React + TypeScript</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <Container>
+                <h2 style={{padding: '25px 10px'}}>
+                    My name is Justin Rogers and these are my websites
+                </h2>
+            </Container>
+            <Container>
+                <Col>
+                    <Container>
+                        <Row style={{padding: '10px'}}>
+                            <Col sm={12} lg={6}>
+                                <Container style={{padding: '10px'}}>
+                                    <a target={'_blank'} href={'https://patriothacks2024.vercel.app/'}>
+                                        <Image style={{width: '100%', borderRadius: '5px'}} src={'/OpenCV.png'}/>
+                                    </a>
+                                </Container>
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <h3>
+                                    Computer Vision Hackathon
+                                </h3>
+                                <Card.Text>
+                                    PatriotHacks 2024 was a hackathon at GMU where various employers came together to
+                                    task
+                                    participants with complicated problems with a time limit of less than 36 hours. The
+                                    employers that I chose to work with were MetroStar, AWS, and Peraton. Our project
+                                    used
+                                    AWS and OpenCV, a Python computer vision library, to reach an accuracy of 100
+                                    percent on
+                                    the easiest part, 96 percent accuracy on the mediocre task, and 80% accuracy on the
+                                    most
+                                    challenging task. Our group achieved the highest accuracies out of the finalists and
+                                    finished second place overall with <a style={{fontWeight: 'bold'}} target={"_blank"}
+                                                                          href={'https://patriothacks2024.vercel.app/'}>
+                                    this website</a> as our presentation.
+                                </Card.Text>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container>
+                        <Row style={{padding: '10px'}}>
+                            <Col sm={12} lg={6}>
+                                <Container style={{padding: '10px'}}>
+                                    <a target={'_blank'} href={'https://www.webminers.dev'}>
+                                        <Image style={{width: '100%', borderRadius: '5px'}} src={'/Webminers.png'}/>
+                                    </a>
+                                </Container>
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <h3>
+                                    Webminers
+                                </h3>
+                                <Card.Text>
+                                    Webminers is an investment website that uses Modern Portfolio Theory to find
+                                    comparatively efficient assets from a custom algorithm that results in a value that
+                                    can
+                                    be plotted and visualized on <a style={{fontWeight: 'bold'}} target={"_blank"}
+                                                                    href={'https://www.webminers.dev'}>Webminers.dev</a>.
+                                    Webminers also includes
+                                    efficiency-balanced
+                                    portfolios and investing calculators. Achieved pages include subscriptions with
+                                    payments, logins, and economic indicators from custom macro/micro-economic
+                                    algorithms.
+                                </Card.Text>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Col>
+                <Col>
+                    <Container style={{background:'whitesmoke', padding:'10px', borderRadius:'25px', margin: '25px 0'}}>
+                        <h3>Additional Skills</h3>
+                        <p>
+                            Expertise in Python, R, SQL, JavaScript, and other Web Development / Data Science tools or
+                            libraries. Support skills include Project Management, Problem-Solving, Algorithms, and
+                            Machine Learning
+                        </p>
+                    </Container>
+                </Col>
+            </Container>
         </Container>
     )
 }
