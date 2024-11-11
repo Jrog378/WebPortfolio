@@ -2,7 +2,7 @@ import {Button, CardLink, Container, Navbar} from "react-bootstrap";
 
 export default function Mainnav() {
     return (
-        <Navbar className="bg-body-tertiary"
+        <Navbar expand="sm" className="bg-body-tertiary"
                 style={{
                     paddingLeft: '15px',
                     background: 'whitesmoke',
