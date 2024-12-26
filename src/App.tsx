@@ -15,6 +15,32 @@ function App() {
                         <Row style={{padding: '10px'}}>
                             <Col sm={12} lg={6}>
                                 <Container style={{padding: '10px'}}>
+                                    <a target={'_blank'} href={'https://rolesclothing.com'}>
+                                        <Image style={{width: '100%', borderRadius: '5px'}} src={'/RolesClothing.png'}/>
+                                    </a>
+                                </Container>
+                            </Col>
+                            <Col sm={12} lg={6}>
+                                <h3>
+                                    Roles Clothing Brand
+                                </h3>
+                                <Card.Text>
+                                    Roles Clothing is an innovating and creative clothing brand. The website I have
+                                    created for this company is packed with precise designs to optimize user experience
+                                    and increase sales by making a promising first impression. This website is
+                                    constructed with animations, transitions, and unique product displays. On top of
+                                    these visual features, functionality comes from seamless strip integration to ensure
+                                    secure and timely order processing and shipping. <a target={'_blank'}
+                                                                                        href={'https://rolesclothing.com'}>This website</a> is made with Vite and
+                                    ReactJS Routing and is currently operating without a backend framework.
+                                </Card.Text>
+                            </Col>
+                        </Row>
+                    </Container>
+                    <Container>
+                        <Row style={{padding: '10px'}}>
+                            <Col sm={12} lg={6}>
+                                <Container style={{padding: '10px'}}>
                                     <a target={'_blank'} href={'https://patriothacks2024.vercel.app/'}>
                                         <Image style={{width: '100%', borderRadius: '5px'}} src={'/OpenCV.png'}/>
                                     </a>
@@ -72,7 +98,8 @@ function App() {
                     </Container>
                 </Col>
                 <Col>
-                    <Container style={{background:'whitesmoke', padding:'10px', borderRadius:'25px', margin: '25px 0'}}>
+                    <Container
+                        style={{background: 'whitesmoke', padding: '10px', borderRadius: '25px', margin: '25px 0'}}>
                         <h3>Additional Skills</h3>
                         <p>
                             Expertise in Python, R, SQL, JavaScript, and other Web Development / Data Science tools or
